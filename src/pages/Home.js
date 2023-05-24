@@ -16,21 +16,21 @@ const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
-        setIsOpen(!isOpen);
+      setIsOpen(!isOpen);
     };
 
     return (
         <>
-            <Sidebar isOpen={isOpen} toggle={toggle}/>
-            <Navbar toggle={toggle}/>
-            <Hero />
-            <CardSection />
-            <DoublePanel />
-            <CallToAction />
-            <Services />
-            <Testimonial />
-            <PopularCourses courses={course} />
-            <Footer />
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <Navbar toggle={toggle}/>
+        <Hero />
+        <CardSection />
+        <DoublePanel />
+        <CallToAction />
+        <Services />
+        <Testimonial />
+        <PopularCourses courses={course} />
+        <Footer />
         </>
     )
 }
